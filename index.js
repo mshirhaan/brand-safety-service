@@ -55,6 +55,7 @@ const socialMediaCreators = [
     approvedPosts: approvedPosts,
 
     flaggedPosts: flaggedPosts,
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   },
   {
     id: 2,
@@ -70,6 +71,7 @@ const socialMediaCreators = [
     severeFlags: 3,
     approvedPosts: approvedPosts,
     flaggedPosts: flaggedPosts,
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   },
   {
     id: 3,
@@ -89,6 +91,7 @@ const socialMediaCreators = [
     severeFlags: 3,
     approvedPosts: approvedPosts,
     flaggedPosts: flaggedPosts,
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   },
   {
     id: 4,
@@ -108,6 +111,7 @@ const socialMediaCreators = [
     severeFlags: 3,
     approvedPosts: approvedPosts,
     flaggedPosts: flaggedPosts,
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   },
   {
     id: 5,
@@ -127,6 +131,7 @@ const socialMediaCreators = [
     severeFlags: 3,
     approvedPosts: approvedPosts,
     flaggedPosts: flaggedPosts,
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   },
   {
     id: 6,
@@ -146,6 +151,7 @@ const socialMediaCreators = [
     severeFlags: 3,
     approvedPosts: approvedPosts,
     flaggedPosts: flaggedPosts,
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   },
   {
     id: 7,
@@ -165,6 +171,7 @@ const socialMediaCreators = [
     severeFlags: 3,
     approvedPosts: approvedPosts,
     flaggedPosts: flaggedPosts,
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   },
   {
     id: 8,
@@ -184,6 +191,7 @@ const socialMediaCreators = [
     severeFlags: 3,
     approvedPosts: approvedPosts,
     flaggedPosts: flaggedPosts,
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   },
 ];
 
