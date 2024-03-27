@@ -6,8 +6,8 @@ const app = express();
 
 const approvedPosts = [];
 const flaggedPosts = [];
+const platforms = ["Instagram", "Twitter", "Facebook"]; 
 
-let test = 'hi';
 
 for (let i = 1; i <= 20; i++) {
 
