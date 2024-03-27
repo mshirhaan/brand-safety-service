@@ -8,11 +8,15 @@ const approvedPosts = [];
 const flaggedPosts = [];
 
 for (let i = 1; i <= 20; i++) {
+
+  const randomPlatformIndex = Math.floor(Math.random() * platforms.length);
+  const platform = platforms[randomPlatformIndex];
+  
   approvedPosts.push({
     id: i,
     imageUrl: `https://via.placeholder.com/300?text=Approved+post+${i}`,
-    caption: `Approved post ${i} caption`,
-    platform: "Instagram",
+    caption: `Post ${i}`,
+    platform: platform,
     likes: Math.floor(Math.random() * 1000), // Random number of likes
     comments: Math.floor(Math.random() * 100), // Random number of comments
     flags: Math.floor(Math.random() * 5), // Random number of flags
@@ -21,8 +25,8 @@ for (let i = 1; i <= 20; i++) {
   flaggedPosts.push({
     id: i,
     imageUrl: `https://via.placeholder.com/300?text=Flagged+post+${i}`,
-    caption: `Flagged post ${i} caption`,
-    platform: "Instagram",
+    caption: `Post ${i}`,
+    platform: platform,
     likes: Math.floor(Math.random() * 1000), // Random number of likes
     comments: Math.floor(Math.random() * 100), // Random number of comments
     flags: Math.floor(Math.random() * 5), // Random number of flags
