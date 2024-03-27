@@ -7,6 +7,8 @@ const app = express();
 const approvedPosts = [];
 const flaggedPosts = [];
 
+let test = 'hi';
+
 for (let i = 1; i <= 20; i++) {
 
   const randomPlatformIndex = Math.floor(Math.random() * platforms.length);
