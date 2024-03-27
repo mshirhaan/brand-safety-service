@@ -11,8 +11,8 @@ const platforms = ["Instagram", "Twitter", "Facebook"];
 
 for (let i = 1; i <= 20; i++) {
 
-  const randomPlatformIndex = Math.floor(Math.random() * platforms.length);
-  const platform = platforms[randomPlatformIndex];
+  const imageUrl = `https://picsum.photos/300?random=${i}`;
+  const platform = platforms[Math.floor(Math.random() * platforms.length)]; 
   
   approvedPosts.push({
     id: i,
@@ -26,7 +26,7 @@ for (let i = 1; i <= 20; i++) {
 
   flaggedPosts.push({
     id: i,
-    imageUrl: `https://via.placeholder.com/300?text=Flagged+post+${i}`,
+    imageUrl: imageUrl,
     caption: `Post ${i}`,
     platform: platform,
     likes: Math.floor(Math.random() * 1000), // Random number of likes
