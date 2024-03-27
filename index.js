@@ -219,9 +219,7 @@ app.get("/creators/:creatorId", (req, res) => {
     return res.status(404).json({ error: "Creator not found" });
   }
 
-  setTimeout(() => {
-    res.json(creator);
-  }, 2000);
+  res.json(creator);
 });
 
 app.post("/creators", (req, res) => {
@@ -286,9 +284,9 @@ app.post("/creators", (req, res) => {
     );
   }
 
-  setTimeout(() => {
-    res.json(filteredCreators);
-  }, 2000);
+  
+  res.json(filteredCreators);
+  
 });
 
 const PORT = process.env.PORT || 3200;
