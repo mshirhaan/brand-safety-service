@@ -4,6 +4,31 @@ const cors = require("cors");
 
 const app = express();
 
+const approvedPosts = [];
+const flaggedPosts = [];
+
+for (let i = 1; i <= 20; i++) {
+  approvedPosts.push({
+    id: i,
+    imageUrl: `https://via.placeholder.com/300?text=Approved+post+${i}`,
+    caption: `Approved post ${i} caption`,
+    platform: "Instagram",
+    likes: Math.floor(Math.random() * 1000), // Random number of likes
+    comments: Math.floor(Math.random() * 100), // Random number of comments
+    flags: Math.floor(Math.random() * 5), // Random number of flags
+  });
+
+  flaggedPosts.push({
+    id: i,
+    imageUrl: `https://via.placeholder.com/300?text=Flagged+post+${i}`,
+    caption: `Flagged post ${i} caption`,
+    platform: "Instagram",
+    likes: Math.floor(Math.random() * 1000), // Random number of likes
+    comments: Math.floor(Math.random() * 100), // Random number of comments
+    flags: Math.floor(Math.random() * 5), // Random number of flags
+  });
+}
+
 const socialMediaCreators = [
   {
     id: 1,
@@ -21,49 +46,9 @@ const socialMediaCreators = [
     totalFlags: 10,
     severeFlags: 3,
 
-    approvedPosts: [
-      {
-        id: 1,
-        imageUrl: "https://via.placeholder.com/300",
-        caption: "Approved post 1 caption",
-        platform: "Instagram",
-        likes: 100,
-        comments: 20,
-        flags: 2,
-      },
-      {
-        id: 2,
-        imageUrl: "https://via.placeholder.com/300",
-        caption: "Approved post 2 caption",
-        platform: "Instagram",
-        likes: 150,
-        comments: 30,
-        flags: 1,
-      },
-      // Add more approved posts as needed...
-    ],
+    approvedPosts: approvedPosts,
 
-    flaggedPosts: [
-      {
-        id: 1,
-        imageUrl: "https://via.placeholder.com/300",
-        caption: "Flagged post 1 caption",
-        platform: "Instagram",
-        likes: 50,
-        comments: 10,
-        flags: 5,
-      },
-      {
-        id: 2,
-        imageUrl: "https://via.placeholder.com/300",
-        caption: "Flagged post 2 caption",
-        platform: "Instagram",
-        likes: 80,
-        comments: 15,
-        flags: 3,
-      },
-      // Add more flagged posts as needed...
-    ],
+    flaggedPosts: flaggedPosts,
   },
   {
     id: 2,
@@ -77,6 +62,8 @@ const socialMediaCreators = [
     score: 500,
     totalFlags: 10,
     severeFlags: 3,
+    approvedPosts: approvedPosts,
+    flaggedPosts: flaggedPosts,
   },
   {
     id: 3,
@@ -94,6 +81,8 @@ const socialMediaCreators = [
     score: 500,
     totalFlags: 10,
     severeFlags: 3,
+    approvedPosts: approvedPosts,
+    flaggedPosts: flaggedPosts,
   },
   {
     id: 4,
@@ -111,6 +100,8 @@ const socialMediaCreators = [
     score: 500,
     totalFlags: 10,
     severeFlags: 3,
+    approvedPosts: approvedPosts,
+    flaggedPosts: flaggedPosts,
   },
   {
     id: 5,
@@ -128,6 +119,8 @@ const socialMediaCreators = [
     score: 500,
     totalFlags: 10,
     severeFlags: 3,
+    approvedPosts: approvedPosts,
+    flaggedPosts: flaggedPosts,
   },
   {
     id: 6,
@@ -145,6 +138,8 @@ const socialMediaCreators = [
     score: 500,
     totalFlags: 10,
     severeFlags: 3,
+    approvedPosts: approvedPosts,
+    flaggedPosts: flaggedPosts,
   },
   {
     id: 7,
@@ -162,6 +157,8 @@ const socialMediaCreators = [
     score: 500,
     totalFlags: 10,
     severeFlags: 3,
+    approvedPosts: approvedPosts,
+    flaggedPosts: flaggedPosts,
   },
   {
     id: 8,
@@ -179,6 +176,8 @@ const socialMediaCreators = [
     score: 500,
     totalFlags: 10,
     severeFlags: 3,
+    approvedPosts: approvedPosts,
+    flaggedPosts: flaggedPosts,
   },
 ];
 
