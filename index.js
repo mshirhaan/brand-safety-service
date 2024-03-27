@@ -44,8 +44,8 @@ const socialMediaCreators = [
     followers: 10000,
     imageUrl: "https://via.placeholder.com/150",
     platforms: [
-      { name: "Facebook", url: "https://www.facebook.com/example" },
-      { name: "Instagram", url: "https://www.instagram.com/example" },
+      { name: "Facebook", username:'mshirhaan', followers:500, url: "https://www.facebook.com/example" },
+      { name: "Instagram", username:'mshirhaan', followers:500, url: "https://www.instagram.com/example" },
     ],
     status: "approved",
     score: 500,
